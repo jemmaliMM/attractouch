@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Remi Gillig (speps) -->
+<at:level xmlns:at="http://speps.fr/attractouch/level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://speps.fr/attractouch/level level.xsd" rate="1.5" nextLevel="prelevel2">
+	<mainLauncher>
+		<initialParticles>15</initialParticles>
+		<position x="100" y="100"/>
+		<speed>1</speed>
+		<direction>0</direction>
+		<radius>60</radius>
+	</mainLauncher>
+	<optionalLaunchers/>
+	<receiver>
+		<position x="1160" y="900"/>
+		<radius>100</radius>
+	</receiver>
+	<walls>
+		<!-- tour de mur -->
+		<!-- wall left -->
+		<wall height="190" width="10" x="10" y="10"/>
+		<wall height="774" width="10" x="10" y="250"/>
+		<!-- wall right -->
+		<wall height="1014" width="10" x="1260" y="10"/>
+		<!-- wall top -->
+		<wall height="10" width="1250" x="10" y="10"/>
+		
+		<!-- trans to pre2 -->
+		<wall height="274" width="270" x="790" y="750"/>
+		
+		<!-- ld -->
+		<wall height="50" width="1000" x="10" y="200"/>
+		<wall height="816" width="50" x="790" y="210"/>
+	</walls>
+	<flow>
+		<velocity>
+			<position x="200" y="100"/>
+			<direction>0</direction>
+			<strength>1</strength>
+		</velocity>
+		<velocity>
+			<position x="400" y="100"/>
+			<direction>0</direction>
+			<strength>1</strength>
+		</velocity>
+		<velocity>
+			<position x="1100" y="200"/>
+			<direction>-90</direction>
+			<strength>1</strength>
+		</velocity>
+		<velocity>
+			<position x="1100" y="400"/>
+			<direction>-90</direction>
+			<strength>1</strength>
+		</velocity>
+		<velocity>
+			<position x="900" y="300"/>
+			<direction>-45</direction>
+			<strength>1</strength>
+		</velocity>
+	</flow>
+</at:level>

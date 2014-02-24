@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="settings">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="width" type="xs:unsignedShort" default="800"/>
+				<xs:element name="height" type="xs:unsignedShort" default="600"/>
+				<xs:element name="fullscreen" type="xs:boolean" default="false"/>
+				<xs:element name="portTUIO" type="xs:unsignedShort" default="3333"/>
+				<xs:element name="portOSC" type="xs:unsignedShort" default="6666"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

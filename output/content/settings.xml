@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="settings.xsd">
+
+  <width>800</width>
+
+  <height>600</height>
+
+  <fullscreen>false</fullscreen>
+
+  <portTUIO>3333</portTUIO>
+
+  <portOSC>6666</portOSC>
+
+</settings>

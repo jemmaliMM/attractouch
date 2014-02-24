@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Remi Gillig (speps) -->
+<at:level xmlns:at="http://speps.fr/attractouch/level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://speps.fr/attractouch/level level.xsd" rate="1.5" nextLevel="level4">
+	<mainLauncher>
+		<initialParticles>15</initialParticles>
+		<position x="1150" y="100"/>
+		<speed>1</speed>
+		<direction>180</direction>
+		<radius>60</radius>
+	</mainLauncher>
+	<optionalLaunchers/>
+	<receiver>
+		<position x="100" y="880"/>
+		<radius>100</radius>
+	</receiver>
+	<walls>
+		<!-- tour de mur -->
+		<wall height="1024" width="15" x="1265" y="0"/>
+		<wall height="15" width="1050" x="0" y="0"/>
+		<wall height="15" width="900" x="500" y="1000"/>
+		
+		<!-- ld -->
+		<!-- forme 1 -->
+		<!-- pointe haut -->
+		<wall height="350" width="50" x="500" y="200"/>
+		<wall height="50" width="210" x="300" y="300"/>
+		<!-- centre -->
+		<wall height="50" width="660" x="500" y="500"/>
+		<!-- pointe bas -->
+		<wall height="50" width="410" x="870" y="700"/>
+		
+		<!-- tige en bas a droite -->
+		<wall height="300" width="50" x="650" y="500"/>
+		
+		<!-- tige en bas a gauche -->
+		<!--<wall height="250" width="50" x="400" y="750"/>-->
+		
+		<!-- tiges noires haut droite -->
+		<wall height="300" width="15" x="800" y="0"/>
+		<!--<wall height="100" width="15" x="800" y="400"/>-->
+		<!-- tiges noires haut gauche -->
+		<wall height="400" width="15" x="100" y="0"/>
+		<wall height="15" width="300" x="00" y="600"/>
+		
+	</walls>
+	<flow>
+		<velocity>
+			<position x="100" y="100"/>
+			<direction>-45</direction>
+			<strength>1</strength>
+		</velocity>
+	</flow>
+</at:level>

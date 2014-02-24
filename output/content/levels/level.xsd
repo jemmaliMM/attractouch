@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Remi Gillig (speps) -->
+<!--Positions and sizes are in pixels and in reference to a 1280x1024 resolution-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:level="http://speps.fr/attractouch/level" targetNamespace="http://speps.fr/attractouch/level">
+	<xs:complexType name="vectorType">
+		<xs:attribute name="x" type="xs:int" use="required"/>
+		<xs:attribute name="y" type="xs:int" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="velocityType">
+		<xs:sequence>
+			<xs:element name="position" type="level:vectorType"/>
+			<xs:element name="direction" type="xs:float" default="0"/>
+			<xs:element name="strength" type="xs:float" default="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="rectangleType">
+		<xs:attribute name="x" type="xs:int" use="required"/>
+		<xs:attribute name="y" type="xs:int" use="required"/>
+		<xs:attribute name="width" type="xs:unsignedInt" use="required"/>
+		<xs:attribute name="height" type="xs:unsignedInt" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="launcherType">
+		<xs:sequence>
+			<xs:element name="initialParticles" type="xs:unsignedShort" default="10"/>
+			<xs:element name="position" type="level:vectorType" nillable="false"/>
+			<xs:element name="speed" type="xs:float" default="1"/>
+			<xs:element name="direction" type="xs:float" default="0"/>
+			<xs:element name="radius" type="xs:unsignedInt" default="60"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="launchersType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="launcher" type="level:launcherType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="receiverType">
+		<xs:sequence>
+			<xs:element name="position" type="level:vectorType"/>
+			<xs:element name="radius" type="xs:unsignedInt" default="60"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="wallsType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="wall" type="level:rectangleType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="flowType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="velocity" type="level:velocityType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="levelType">
+		<xs:sequence>
+			<xs:element name="mainLauncher" type="level:launcherType" nillable="false"/>
+			<xs:element name="optionalLaunchers" type="level:launchersType" nillable="false"/>
+			<xs:element name="receiver" type="level:receiverType" nillable="false"/>
+			<xs:element name="walls" type="level:wallsType" nillable="false"/>
+			<xs:element name="flow" type="level:flowType" nillable="false"/>
+		</xs:sequence>
+		<xs:attribute name="rate" type="xs:float" default="1"/>
+		<xs:attribute name="nextLevel" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:element name="level" type="level:levelType"/>
+</xs:schema>

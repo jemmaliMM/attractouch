@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<at:constants xmlns:at="http://speps.fr/attractouch/constants" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://speps.fr/attractouch/constants constants.xsd">
+	<fingerRadius>100</fingerRadius>
+	<firstLevel>prelevel1</firstLevel>
+</at:constants>

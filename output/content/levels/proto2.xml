@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Remi Gillig (speps) -->
+<at:level xmlns:at="http://speps.fr/attractouch/level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://speps.fr/attractouch/level level.xsd" rate="1.5">
+	<mainLauncher>
+		<initialParticles>20</initialParticles>
+		<position x="1180" y="100"/>
+		<speed>1</speed>
+		<direction>180</direction>
+		<radius>60</radius>
+	</mainLauncher>
+	<optionalLaunchers/>
+	<receiver>
+		<position x="500" y="850"/>
+		<radius>60</radius>
+	</receiver>
+	<walls>
+		<wall height="200" width="100" x="500" y="290"/>
+		<wall height="200" width="200" x="550" y="390"/>
+		<wall height="500" width="400" x="750" y="390"/>
+		<wall height="500" width="200" x="0" y="450"/>
+	</walls>
+	<flow/>
+</at:level>

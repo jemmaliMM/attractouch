@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Remi Gillig (speps) -->
+<at:level xmlns:at="http://speps.fr/attractouch/level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://speps.fr/attractouch/level level.xsd" rate="1.5" nextLevel="level1">
+	<mainLauncher>
+		<initialParticles>15</initialParticles>
+		<position x="1160" y="50"/>
+		<speed>1</speed>
+		<direction>-90</direction>
+		<radius>60</radius>
+	</mainLauncher>
+	<optionalLaunchers/>
+	<receiver>
+		<position x="1160" y="950"/>
+		<radius>100</radius>
+	</receiver>
+	<walls>
+		<!-- tour de mur -->
+		<!-- wall left -->
+		<wall height="750" width="10" x="10" y="150"/>
+		<!-- wall right -->
+		<wall height="1024" width="10" x="1260" y="0"/>
+		<!-- wall top -->
+		<wall height="10" width="1060" x="10" y="150"/>
+		<!-- wall bottom -->
+		<wall height="10" width="1060" x="10" y="900"/>
+
+		<!-- trans from pre2 -->
+		<wall height="160" width="10" x="1060" y="0"/>
+		<!--<wall height="1" width="270" x="790" y="200"/>-->
+		
+		<!-- trans to l1 -->
+		<wall height="124" width="10" x="1060" y="900"/>
+		
+		<!-- ld -->
+		<!-- bloc haut -->
+		<wall height="180" width="120" x="590" y="150"/>
+
+		<!-- bloc bas -->
+		<wall height="180" width="120" x="590" y="730"/>
+		
+		<!-- forme centrale-->
+		<wall height="50" width="1060" x="210" y="500"/>
+		<!--<wall height="450" width="50" x="210" y="300"/>-->
+
+	</walls>
+	<flow>
+		<velocity>
+			<position x="100" y="100"/>
+			<direction>-45</direction>
+			<strength>1</strength>
+		</velocity>
+	</flow>
+</at:level>
